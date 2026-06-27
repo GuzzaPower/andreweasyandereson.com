@@ -1163,7 +1163,7 @@ a:hover { color: var(--blue-mid); }
 /* Compact footer (interior pages) */
 .site-footer {
   background: var(--navy);
-  color: var(--on-dark-mid);
+  color: var(--on-dark);          /* brighter body text — ~15:1 on navy */
   padding: 44px 0;
   font-size: 18px;
 }
