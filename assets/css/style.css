@@ -512,12 +512,13 @@ a:hover { color: var(--blue-mid); }
   position: relative;
   overflow: hidden;
   padding: 96px 0 92px;
+  color: var(--on-dark);
   background:
-    radial-gradient(ellipse 60% 80% at 100% 0%, rgba(0, 185, 107, 0.10), transparent 55%),
-    radial-gradient(ellipse 55% 70% at 0% 100%, rgba(26, 94, 153, 0.10), transparent 55%),
-    var(--bg);
-  border-bottom: 1px solid var(--line);
+    radial-gradient(ellipse 60% 80% at 100% 0%, rgba(0, 185, 107, 0.14), transparent 55%),
+    radial-gradient(ellipse 55% 70% at 0% 100%, rgba(26, 94, 153, 0.24), transparent 55%),
+    var(--navy);
 }
+.home-hero .eyebrow { color: var(--green); }   /* #00B96B — 6.4:1 on navy */
 .home-hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -530,43 +531,46 @@ a:hover { color: var(--blue-mid); }
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  color: var(--navy);
+  color: var(--white);                 /* 16.5:1 on navy */
   margin-bottom: 0.55em;
   text-wrap: balance;
 }
-.home-hero-title .accent { color: var(--green-dark); }
+.home-hero-title .accent { color: var(--green); }   /* #00B96B — 6.4:1 on navy */
 .home-hero-lede {
-  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
-  color: var(--slate);
+  font-size: clamp(1.2rem, 2.2vw, 1.4rem);   /* min 19.2px */
+  color: var(--on-dark);               /* off-white, ~15:1 on navy */
   max-width: 56ch;
   margin-bottom: 2.2rem;
 }
-.home-hero-lede strong { color: var(--ink); font-weight: 700; }
+.home-hero-lede strong { color: var(--white); font-weight: 700; }
+
+/* CTA buttons on the dark hero */
+.home-hero .btn-primary {
+  background: var(--white);
+  color: var(--navy);
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.55);
+}
+.home-hero .btn-primary:hover {
+  background: var(--blue-xlight);
+  color: var(--blue-mid);
+}
+.home-hero .btn-ghost {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+.home-hero .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  border-color: var(--white);
+}
 
 /* Portrait */
 .hero-portrait { position: relative; justify-self: center; max-width: 420px; width: 100%; }
-.hero-portrait::before {
-  content: "";
-  position: absolute;
-  inset: 22px -22px -22px 22px;
-  border-radius: 24px;
-  background: linear-gradient(150deg, var(--green-dark), var(--blue));
-  opacity: 0.16;
-  z-index: 0;
-}
 .hero-portrait img {
-  position: relative;
-  z-index: 1;
   display: block;
   width: 100%;
-  height: auto;                /* override the height attr so the photo is never stretched */
-  aspect-ratio: 4 / 5;         /* stable portrait frame */
-  object-fit: contain;         /* show the WHOLE portrait — never crop */
-  object-position: center center;  /* centered horizontally and vertically */
-  background: var(--white);    /* clean fill for any letterbox space */
-  border-radius: 22px;
-  border: 1px solid var(--line);
-  box-shadow: 0 30px 60px -30px rgba(11, 31, 58, 0.5);
+  height: auto;                /* natural ratio — full photo, never stretched or cropped */
+  box-shadow: 0 26px 55px -18px rgba(0, 0, 0, 0.7);  /* soft lift off the navy */
 }
 
 /* ---------- Stats bar ---------- */
