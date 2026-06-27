@@ -600,38 +600,22 @@ a:hover { color: var(--blue-mid); }
     align-items: center;
     padding: 40px 36px;
   }
-  .machine-card--wide .machine-kicker { grid-column: 1; grid-row: 1; margin-bottom: 10px; align-self: end; }
+  .machine-card--wide .machine-num    { grid-column: 1; grid-row: 1; margin-bottom: 12px; align-self: end; }
   .machine-card--wide .machine-name   { grid-column: 1; grid-row: 2; margin-bottom: 10px; }
   .machine-card--wide .machine-desc   { grid-column: 1; grid-row: 3; margin-bottom: 0; align-self: start; }
   .machine-card--wide .machine-proof  { grid-column: 2; grid-row: 1 / 4; align-self: center; max-width: none; }
-  .machine-card--wide .machine-num    { font-size: 158px; top: -28px; right: 30px; }
 }
 
-/* large faded number watermark — decorative */
+/* component number — visible, high-contrast, in normal flow (never covered) */
 .machine-num {
-  position: absolute;
-  top: -14px;
-  right: 10px;
+  display: block;
   font-family: var(--font-display);
-  font-size: clamp(86px, 11vw, 124px);
+  font-size: clamp(44px, 5vw, 58px);
   font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.04em;
-  color: rgba(0, 95, 53, 0.09);
-  pointer-events: none;
-  z-index: 0;
-}
-/* keep real content above the watermark */
-.machine-card > :not(.machine-num) { position: relative; z-index: 1; }
-
-.machine-kicker {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: -0.03em;
   color: var(--green-dark);          /* #005F35 — 7.81:1 on white */
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .machine-name {
   font-family: var(--font-display);
@@ -754,6 +738,7 @@ a:hover { color: var(--blue-mid); }
   line-height: 1.6;
   margin: 0;
 }
+.timeline-content p + p { margin-top: 14px; }
 
 /* ---------- Credentials grid ---------- */
 .cred-grid {
