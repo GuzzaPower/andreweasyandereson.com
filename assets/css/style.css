@@ -526,12 +526,13 @@ a:hover { color: var(--blue-mid); }
 }
 .home-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.7rem, 6vw, 4.4rem);
+  font-size: clamp(2.1rem, 4.4vw, 3.3rem);  /* sized for the longer headline */
   font-weight: 700;
-  line-height: 1.04;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--navy);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.55em;
+  text-wrap: balance;
 }
 .home-hero-title .accent { color: var(--green-dark); }
 .home-hero-lede {
