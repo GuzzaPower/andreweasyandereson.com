@@ -1330,6 +1330,30 @@ a:hover { color: var(--blue-mid); }
 }
 .blog-card-link:hover { text-decoration: underline; }
 .blog-card:hover .blog-card-link { text-decoration: underline; }
+.blog-card-author {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1rem;
+}
+.blog-card-author-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+.blog-card-author-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0B2040;
+}
+.blog-card-author-date {
+  font-size: 1rem;
+  color: #6B7E91;
+  margin-left: auto;
+}
 @media (max-width: 640px) {
   .blog-grid { grid-template-columns: 1fr; }
 }
