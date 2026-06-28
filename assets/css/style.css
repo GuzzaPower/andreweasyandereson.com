@@ -971,6 +971,23 @@ a:hover { color: var(--blue-mid); }
   font-weight: 600;
 }
 
+/* ---------- Blog post figures ---------- */
+.article figure { margin: 2.6rem 0; }
+.article figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.article figcaption {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--mid);            /* #54677A — 5.6:1 on white */
+  text-align: center;
+}
+
 /* ---------- Article meta ---------- */
 .post-meta {
   display: flex;
