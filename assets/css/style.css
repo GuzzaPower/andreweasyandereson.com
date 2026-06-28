@@ -988,8 +988,14 @@ a:hover { color: var(--blue-mid); }
   text-align: center;
 }
 
-/* ---------- Blog post hero (featured image above the headline) ---------- */
-.post-hero { width: 100%; margin: 0 0 2.5rem; }
+/* ---------- Blog post hero + breadcrumb ---------- */
+.section.post-article { padding-top: 0; }    /* beats the responsive .section padding so the breadcrumb sits ~1rem under the nav */
+.post-breadcrumb {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.back-link.post-breadcrumb { margin-bottom: 0; }   /* override .back-link's 1.4em for tight spacing */
+.post-hero { width: 100%; margin: 1.5rem 0 2rem; }
 .post-hero img {
   width: 100%;
   height: auto;
