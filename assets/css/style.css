@@ -1262,9 +1262,7 @@ a:hover { color: var(--blue-mid); }
 }
 .blog-card-image {
   width: 100%;
-  height: auto;                  /* override the height="450" attr so aspect-ratio governs */
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;                  /* natural ratio — show the full image, never cropped */
   display: block;
   background: var(--bg-alt);     /* clean fallback while loading / if missing */
   transition: transform 0.3s var(--ease);
