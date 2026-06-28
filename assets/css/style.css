@@ -25,6 +25,7 @@
   --teal-dark:     #008000;   /* AA text/link teal on white — 4.5:1 */
   --teal-light:    #E8F5E8;
   --green:         #1A8C4E;
+  --green-on-dark: #3DBA5F;   /* lighter green for labels on the navy footer — 6.6:1 */
   --text-primary:  #0B2040;
   --text-secondary:#3D5166;
   --text-muted:    #6B7E91;
@@ -1741,7 +1742,7 @@ a:hover { color: var(--blue-mid); }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal);           /* teal accent on navy — 5.1:1 */
+  color: var(--green-on-dark);  /* lighter green on navy — 6.6:1 */
 }
 
 /* Rich footer (home page) */
@@ -1767,7 +1768,7 @@ a:hover { color: var(--blue-mid); }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--green-on-dark);
   margin-bottom: 16px;
 }
 .footer-col ul { list-style: none; display: grid; gap: 11px; padding: 0; }
@@ -1812,7 +1813,7 @@ a:hover { color: var(--blue-mid); }
   margin: 0;
   max-width: 70ch;
 }
-.cookie-banner-text a { color: var(--teal); }       /* teal on navy — 5.1:1 */
+.cookie-banner-text a { color: var(--green-on-dark); }   /* lighter green on navy — 6.6:1 */
 .cookie-banner-text a:hover { color: var(--white); }
 .cookie-banner-actions { display: flex; gap: 12px; flex-shrink: 0; }
 .cookie-btn {
