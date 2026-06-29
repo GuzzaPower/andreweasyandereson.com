@@ -1853,11 +1853,12 @@ a:hover { color: var(--blue-mid); }
   padding-inline: 28px;           /* matches .container so the hero aligns with sections below */
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 40px;
 }
 
 .hero-left {
   flex: 1;
+  max-width: 580px;   /* keep the copy column from sprawling so the portrait sits near the text */
 }
 
 .hero-right {
@@ -2011,6 +2012,7 @@ a:hover { color: var(--blue-mid); }
 @media (max-width: 900px) {
   .hero { padding: 56px 0; }
   .hero-inner { flex-direction: column-reverse; gap: 40px; text-align: center; }
+  .hero-left { max-width: none; }
   .hero-headline { font-size: 3.25rem; }
   .hero-sub { max-width: 100%; }
   .hero-btns { justify-content: center; }
