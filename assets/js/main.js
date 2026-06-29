@@ -1,5 +1,5 @@
 /* =========================================================
-   andreweasyandereson.com — main.js
+   andreweasyanderson.com — main.js
    - Auto-update copyright year
    - Optional mobile nav toggle (no-op if controls absent)
    - Subtle scroll reveal (respects prefers-reduced-motion)
@@ -104,11 +104,11 @@
             cform.reset();
             setStatus("Thank you — your message is on its way. I read every one and will reply personally.", "success");
           } else {
-            setStatus("Something went wrong sending your message. Please email hello@andreweasyandereson.com instead.", "error");
+            setStatus("Something went wrong sending your message. Please email hello@andreweasyanderson.com instead.", "error");
           }
         })
         .catch(function () {
-          setStatus("Network error — please try again, or email hello@andreweasyandereson.com directly.", "error");
+          setStatus("Network error — please try again, or email hello@andreweasyanderson.com directly.", "error");
         })
         .finally(function () { if (btn) { btn.disabled = false; } });
     });

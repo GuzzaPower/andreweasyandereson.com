@@ -1,4 +1,4 @@
-# CLAUDE.md — andreweasyandereson.com
+# CLAUDE.md — andreweasyanderson.com
 
 ## Project Overview
 Personal brand and authority site for Andrew "Easy" Anderson.
