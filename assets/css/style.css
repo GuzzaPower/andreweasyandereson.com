@@ -1844,12 +1844,13 @@ a:hover { color: var(--blue-mid); }
 /* ---- HERO ---- */
 .hero {
   background: #ffffff;
-  padding: 80px 48px;
+  padding: 72px 0;
 }
 
 .hero-inner {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: var(--max);          /* 1140px — matches .container site-wide */
+  margin-inline: auto;
+  padding-inline: 28px;           /* matches .container so the hero aligns with sections below */
   display: flex;
   align-items: center;
   gap: 64px;
@@ -2008,7 +2009,7 @@ a:hover { color: var(--blue-mid); }
 }
 
 @media (max-width: 900px) {
-  .hero { padding: 60px 32px; }
+  .hero { padding: 56px 0; }
   .hero-inner { flex-direction: column-reverse; gap: 40px; text-align: center; }
   .hero-headline { font-size: 3.25rem; }
   .hero-sub { max-width: 100%; }
@@ -2018,7 +2019,7 @@ a:hover { color: var(--blue-mid); }
 }
 
 @media (max-width: 540px) {
-  .hero { padding: 48px 20px; }
+  .hero { padding: 44px 0; }
   .hero-headline { font-size: 2.5rem; }
   .hero-photo-wrap { width: 200px; height: 200px; }
 }
