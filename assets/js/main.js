@@ -74,8 +74,17 @@
     banner.querySelector(".cookie-accept").addEventListener("click", function () { choose("accepted"); });
     banner.querySelector(".cookie-decline").addEventListener("click", function () { choose("declined"); });
 
-    document.body.appendChild(banner);
-    banner.focus();
+    // Defer insertion + focus past first paint so the layout-forcing
+    // focus() call stays off the initial render's critical path.
+    var insert = function () {
+      document.body.appendChild(banner);
+      banner.focus();
+    };
+    if (window.requestAnimationFrame) {
+      requestAnimationFrame(function () { requestAnimationFrame(insert); });
+    } else {
+      insert();
+    }
   })();
 
   /* ---- Contact form (Web3Forms, no page reload) ---- */
