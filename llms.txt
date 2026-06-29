@@ -1,0 +1,35 @@
+# Andrew "Easy" Anderson
+
+> Andrew "Easy" Anderson has spent nearly 40 years building digital systems that work together as one machine. He is the originator of the Video Sales Page, creator of the Five Pillars of AEO framework, and founder of iQ Marketers, with $2.5 billion in leads generated for clients.
+
+Andrew builds the complete digital machine — websites and web applications, AI integrations and business automation, custom software, strategic marketing systems, and AEO/SEO — designed from the first day to work together rather than as disconnected parts. He goes by "Easy."
+
+## Core pages
+
+- [Home](https://andreweasyanderson.com/): Overview of Andrew's work, career timeline, products, and credentials.
+- [Work](https://andreweasyanderson.com/work.html): The seven components of the complete digital machine and services offered.
+- [About](https://andreweasyanderson.com/author/andrew-easy-anderson.html): Full biography, areas of expertise, and career history since 1985.
+- [FAQ](https://andreweasyanderson.com/faq.html): Common questions about Andrew's approach, services, and AEO.
+- [Contact](https://andreweasyanderson.com/contact.html): Get in touch or book a free strategy call.
+
+## Blog
+
+- [Blog](https://andreweasyanderson.com/blog/index.html): Articles on AEO, AI integration, and digital strategy.
+- [ChatGPT Can't Find You](https://andreweasyanderson.com/blog/chatgpt-cant-find-you.html): Why businesses are invisible to AI search engines and how to fix it.
+- [The Five Pillars of AEO](https://andreweasyanderson.com/blog/five-pillars-of-aeo.html): The framework for Answer Engine Optimization.
+- [I've Been Early to Everything](https://andreweasyanderson.com/blog/ive-been-early-to-everything.html): Four decades of being ahead of digital trends.
+
+## Products and properties
+
+- [iQ Marketers](https://iqmarketers.com/): The full-service agency behind the complete digital machine.
+- [iQCookie](https://iqcookie.com/): US-focused cookie compliance platform built for all 50 states.
+- [AEO Website Checker](https://aeowebsitechecker.com/): Free tool that scores any URL against the Five Pillars of AEO.
+- [iQ AI Reviews](https://iqaireviews.com/): Automated authentic five-star review generation.
+- [WebP For AEO](https://webpforaeo.com/): Free image-to-WebP converter for faster, AEO-friendly sites.
+
+## Optional
+
+- [Privacy Policy](https://andreweasyanderson.com/privacy-policy.html)
+- [Terms of Use](https://andreweasyanderson.com/terms.html)
+- [Cookie Policy](https://andreweasyanderson.com/cookie-policy.html)
+- [Accessibility](https://andreweasyanderson.com/accessibility.html)
